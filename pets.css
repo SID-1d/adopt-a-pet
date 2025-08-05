@@ -6,8 +6,8 @@ body {
 
 header{
     background : #ff914d;
-    padding : 15px 30px  ;   /*why two times*/
-    display : flex;  /*???*/
+    padding : 15px 30px  ;   
+    display : flex;  
     justify-content: space-between;
     align-items: center;
 }
@@ -27,7 +27,7 @@ nav a{
 .dropdown-content {
  display: none;
   position: absolute;
-  right: 0; /* Aligns it to the right side of the dropdown */
+  right: 0; 
   background-color: white;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
