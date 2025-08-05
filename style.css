@@ -8,7 +8,7 @@ body {
 header{
     background : #FF914D;
     padding : 15px 30px  ;   
-    display : flex;
+    display : flex;  
     justify-content: space-between;
     align-items: center;
     font-size: medium;
@@ -29,7 +29,7 @@ nav a{
 .dropdown-content {
  display: none;
   position: absolute;
-  right: 0; /* Aligns it to the right side of the dropdown */
+  right: 0; 
   background-color: white;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
@@ -152,5 +152,5 @@ nav a{
       width: 24px;
       margin: 0 5px;
       vertical-align: middle;
-
     }
+
