@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background : #fff8f0
+    /*diff btw background and color*/
+}
+
+
+header{
+    background : #FF914D;
+    padding : 15px 30px  ;   /*why two times*/
+    display : flex;  /*???*/
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+}
+
+nav a{
+    margin: 0px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropdown-content {
+ display: none;
+  position: absolute;
+  right: 0; /* Aligns it to the right side of the dropdown */
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  z-index: 100;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 6px;
+  display: block;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #FF914D;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+}
+
+.hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+      background-image:url(https://media.4-paws.org/7/d/0/3/7d0393451fc286ba2f3f1ee2425f1191d67acb16/VIER%20PFOTEN_2016-10-20_009-2000x1047-1200x628.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background-color: #FF914D;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e6732c;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #FF914D;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 300px;
+    }
+
+    .footer {
+      background-color: #FF914D;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .footer img {
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    .footer .social-icons img {
+      width: 24px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }

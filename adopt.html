@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Page</title>
+    <link rel = "stylesheet" href = "adopt.css">
+</head>
+<body>
+    <header>
+        <h1>Adopt-a-Pet</h1> <!--logo,colour, more features,responsive,deploy-->
+
+        <nav> 
+            <a href = "index.html">Home</a>
+            <a href = "pets.html">Available Pets</a>    
+            <a href = "adopt.html">Adopt Now</a>
+
+            <div class="dropdown">
+              <button class="dropbtn">More</button>
+              <div class="dropdown-content">
+                 <a href="#">Adoption FAQs</a>
+                 <a href="#">Volunteer</a>
+                 <a href="#">Donate</a>
+                 <a href="#">Contact Us</a>
+                <a href="#">Visit Us</a>
+             </div>
+           </div>           
+        </nav>
+    </header>
+
+    <div class =   "container">
+        <h2>Adoption Form</h2>
+        <form action="#" method="POST" id="adoptForm">
+            <label for="name">Full Name</label>
+            <input type ="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address"></textarea>
+
+            <label for= "phone">Phone Number</label>
+            <input type="tel"id="phone" name="phone" required>
+
+           <label for="pet-type">Preferred Pet Type</label>
+            <select id="pet-type" name="pet-type">
+                <option value="any">Any</option>
+                <option value="dog">Dog</option>
+                <option value="cats">Cats</option>
+            </select>
+
+            <label for="pet-name">Pet Name(Optional)</label>
+            <input type="text" id="pet-name" name="pet-name">
+
+            <label for="message">Why do you want to adopt a pet?</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type = "submit" class="submit-btn">Submit Application</button>
+        </form>
+
+        <script>
+        document.getElementById("adoptForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Thank you for submitting the adoption form! 🐶🐱");
+        });
+        </script>
+    </div>
+
+
+</body>
+</html>

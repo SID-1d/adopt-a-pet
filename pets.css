@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fff8f0;
+}
+
+header{
+    background : #ff914d;
+    padding : 15px 30px  ;   /*why two times*/
+    display : flex;  /*???*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    margin: 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropdown-content {
+ display: none;
+  position: absolute;
+  right: 0; /* Aligns it to the right side of the dropdown */
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  z-index: 100;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 6px;
+  display: block;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #FF914D;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+}
+
+.filters {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    input[type="text"], select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .pet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .pet-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .pet-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .pet-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .pet-card h3 {
+      margin: 10px 0 0;
+      font-size: 1.1rem;
+    }
+
+    .pet-card p {
+      margin: 5px 0 10px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .pet-card button {
+      margin: 10px auto 15px;
+      padding: 8px 16px;
+      background-color: #FF914D;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .pet-card button:hover {
+      background-color: #e8772f;
+    }
+
+    
+    .footer {
+      background-color: #FF914D;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .footer img {
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    .footer .social-icons img {
+      width: 24px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
