@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Available Pets</title>
     <link rel = "stylesheet" href="pets.css">   
 </head>
@@ -36,28 +35,24 @@
       <option value="all">All</option>
       <option value="dog">Dog</option>
       <option value="cat">Cat</option>
-      <option value="cow">Cow</option>
-      <option value="monkey">Monkey</option>
     </select>
   </div>
 
-  <div class="pet-grid" id="petGrid">
-    <!-- Cards go here -->
-  </div>
+  <div class="pet-grid" id="petGrid"></div>
 
   <script>
     const pets = [
       { name: "Tommy", type: "dog", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MMsRG0AdcIO3Z4xmq5ZcwfIp000Zx8FrCf5zyajqIABcG2GvOkaYX6R19geKVDVle4E&usqp=CAU" },
       { name: "Moti", type: "dog", image: "https://www.mrnmrspet.com/Files/102024/313378202410151328452026.jpeg" },
       { name: "Simba", type: "cat", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9JGf6oUKDhPg0U5nOQTRt2nNSFMvVZIscMEvlk3ZZGAKYIVvrp8JM4aeLESlQC4lmG_g&usqp=CAU" },
-      { name: "Laila", type: "cat", image: "https://headsupfortails.com/cdn/shop/articles/Blog_Indiecat-01_large.jpg?v=1721106991" },
-      { name: "Ramu", type: "cow", image: "https://i.imgur.com/pYQbUHs.jpg" },
-      { name: "Bijli", type: "dog", image: "https://pawstro.com//wp-content/uploads/2022/06/indiandog.jpg" },
-      { name: "Bholu", type: "monkey", image: "https://i.imgur.com/MgyYpxn.jpg" },
+      { name: "Latte", type: "cat", image: "https://headsupfortails.com/cdn/shop/articles/Blog_Indiecat-01_large.jpg?v=1721106991" },
+      { name: "Bisco", type: "cat", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNAaC5-w-SN_MfhMOFnvNyijpPkGFCRgdccw&s" },
+      { name: "Bruno", type: "dog", image: "https://pawstro.com//wp-content/uploads/2022/06/indiandog.jpg" },
+      { name: "Mickey", type: "dog", image: "https://strayanimalfoundationindia.org/wp-content/uploads/2024/11/Marithi-side-pic2-scaled.jpeg" },
       { name: "Meenu", type: "cat", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgBlxK7D4FBr11aAhrFbtaMoEZs9J9SRKqZg&s" },
       { name: "Sheru", type: "dog", image: "https://www.borrowmydoggy.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4ij0poqn%2Fproduction%2Fd936be3dd08015e4200a9411bb36f7e9c46fda5c-3024x3024.jpg%3Ffit%3Dmax%26auto%3Dformat&w=1080&q=75" },
-      { name: "Ganga", type: "cat", image: "https://dbw3zep4prcju.cloudfront.net/animal/6317437b-54ec-40e2-a125-c9785dee0bba/image/0d9eb834-75d2-4fd6-82a9-6f77b25c9d94.jpg?versionId=jMLsOaPxmnLSuVrKt6LcEQzjIOxuAcKs&bust=1741909399" },
-      { name: "Munni", type: "monkey", image: "https://i.imgur.com/8LDS6pm.jpg" },
+      { name: "Sweety", type: "cat", image: "https://dbw3zep4prcju.cloudfront.net/animal/6317437b-54ec-40e2-a125-c9785dee0bba/image/0d9eb834-75d2-4fd6-82a9-6f77b25c9d94.jpg?versionId=jMLsOaPxmnLSuVrKt6LcEQzjIOxuAcKs&bust=1741909399" },
+      { name: "Mito", type: "cat", image: "https://www.hscipets.org/wp-content/uploads/2025/06/Rose.webp" },
     ];
 
     const petGrid = document.getElementById("petGrid");
@@ -95,7 +90,6 @@
     }
 
     function adopt(name) {
-      // Go to adopt.html with pet name as query param
       window.location.href = `adopt.html?pet=${encodeURIComponent(name)}`;
     }
 
@@ -109,7 +103,7 @@
 </html>
 
 <div class="footer">
-    <p>© 2025 Adopt-a-Pet | Made with ❤️ in India</p>
+    <p>© 2025 Adopt-a-Pet | Made in India</p>
     <div class="social-icons">
       <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" />
       <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" />
